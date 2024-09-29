@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <style>
+      :root {
+        --primary-color: #ff4000;
+        --secondary-colour: #3bb77e;
+        --secondary: #ffba43;
+        --bg: #e2f9ee;
+        --black: #1c2137;
+        --white: #fff;
+        --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: var(--bg);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .signup-container {
+        background-color: var(--white);
+        border-radius: 10px;
+        box-shadow: var(--box-shadow);
+        padding: 20px;
+        width: 300px;
+        text-align: center;
+      }
+
+      .signup-container h2 {
+        color: var(--black);
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-group input {
+        width: calc(100% - 20px);
+        padding: 10px;
+        border: 1px solid var(--black);
+        border-radius: 5px;
+      }
+
+      .form-group input:focus {
+        outline: none;
+        border-color: var(--primary-color);
+      }
+
+      .btn {
+        background-color: var(--primary-color);
+        color: var(--white);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn:hover {
+        background-color: var(--secondary-colour);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="signup-container">
+      <h2>Sign Up</h2>
+      <form>
+        <div class="form-group">
+          <input type="text" name="username" placeholder="Username" />
+        </div>
+        <div class="form-group">
+          <input type="password" name="password" placeholder="Password" />
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Email" />
+        </div>
+        <div class="form-group">
+          <input type="date" name="dob" />
+        </div>
+        <button type="submit" class="btn">Sign Up</button>
+        <p>
+          already have an account?
+          <a href="index.html" class="signup-link">log in insted</a>
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
